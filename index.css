@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.Body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f9f0ff;
+}
+.Img {
+  width: 100vw;
+  height: 35%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./assets/images/WhatsApp\ Image\ 2025-02-04\ at\ 17.53.00_7172fc8b.jpg);
+}
+.Section {
+  width: 420px;
+  min-height: 400px;
+  background-color: white;
+  position: relative;
+  /* left: 450px; */
+  top: 190px;
+  /* right: 50px; */
+  box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Inside-Faq {
+  width: 370px;
+  height: 370px;
+  background-color: brown;
+}
