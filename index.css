@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -6,8 +8,9 @@
 
 .Body {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #f9f0ff;
+  font-family: "Work Sans";
 }
 .Img {
   width: 100vw;
@@ -22,9 +25,10 @@
   width: 420px;
   min-height: 400px;
   background-color: white;
+
   position: relative;
   /* left: 450px; */
-  top: 190px;
+  top: 150px;
   /* right: 50px; */
   box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.2);
   border-radius: 15px;
@@ -34,6 +38,94 @@
 }
 .Inside-Faq {
   width: 370px;
-  height: 370px;
-  background-color: brown;
+  height: 350px;
+  /* background-color: brown; */
+}
+.Icon-holder {
+  height: 55px;
+  width: 100%;
+  /* background-color: green; */
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 20px;
+}
+.Faq {
+  font-size: 30px;
+  font-weight: 600;
+}
+.Svg {
+  display: flex;
+  align-items: center;
+}
+.First-question-holder {
+  width: 96%;
+  height: 30px;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.First-question {
+  font-size: 12px;
+  margin-top: 10px;
+  font-weight: 650;
+  color: hsl(292, 42%, 14%);
+
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+.Svg-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4px;
+  /* background-color: blue; */
+}
+.First-answer {
+  font-size: 10px;
+  line-height: 15px;
+  color: hsl(292, 16%, 49%);
+}
+.First-answer-div {
+  width: 90%;
+  height: 80px;
+  /* background-color: burlywood; */
+  margin-top: 15px;
+  border-bottom: 1px solid silver;
+}
+.Second-question-holder {
+  width: 96%;
+  height: 30px;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.Second-question {
+  font-size: 12px;
+  margin-top: 10px;
+  font-weight: 650;
+  color: hsl(292, 42%, 14%);
+}
+.Second-answer-div {
+  width: 90%;
+  height: 80px;
+  /* background-color: burlywood; */
+  margin-top: 15px;
+  border-bottom: 1px solid silver;
+}
+.Second-answer {
+  font-size: 10px;
+  line-height: 15px;
+  color: hsl(292, 16%, 49%);
+}
+.Third-question-holder {
+  width: 96%;
+  height: 30px;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
 }
