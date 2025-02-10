@@ -28,7 +28,7 @@
 
   position: relative;
   /* left: 450px; */
-  top: 150px;
+  top: 190px;
   /* right: 50px; */
   box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.2);
   border-radius: 15px;
@@ -38,7 +38,7 @@
 }
 .Inside-Faq {
   width: 370px;
-  height: 350px;
+  min-height: 350px;
   /* background-color: brown; */
 }
 .Icon-holder {
@@ -76,6 +76,10 @@
   justify-content: center;
   align-items: center; */
 }
+:hover.First-question {
+  color: #ad28eb;
+  cursor: pointer;
+}
 .Svg-holder {
   display: flex;
   justify-content: center;
@@ -90,9 +94,9 @@
 }
 .First-answer-div {
   width: 90%;
-  height: 80px;
+  height: 75px;
   /* background-color: burlywood; */
-  margin-top: 15px;
+  margin-top: 12px;
   border-bottom: 1px solid silver;
 }
 .Second-question-holder {
@@ -109,11 +113,15 @@
   font-weight: 650;
   color: hsl(292, 42%, 14%);
 }
+:hover.Second-question {
+  color: #ad28eb;
+  cursor: pointer;
+}
 .Second-answer-div {
   width: 90%;
-  height: 80px;
+  height: 75px;
   /* background-color: burlywood; */
-  margin-top: 15px;
+  margin-top: 12px;
   border-bottom: 1px solid silver;
 }
 .Second-answer {
@@ -129,3 +137,92 @@
   justify-content: space-between;
   margin-top: 10px;
 }
+.Third-question {
+  font-size: 12px;
+  margin-top: 10px;
+  font-weight: 650;
+  color: hsl(292, 42%, 14%);
+}
+:hover.Third-question {
+  color: #ad28eb;
+  cursor: pointer;
+}
+.Third-answer-div {
+  width: 90%;
+  height: 75px;
+  /* background-color: burlywood; */
+  margin-top: 12px;
+  border-bottom: 1px solid silver;
+}
+.Third-answer {
+  font-size: 10px;
+  line-height: 15px;
+  color: hsl(292, 16%, 49%);
+}
+.Fourth-question-holder {
+  width: 96%;
+  height: 30px;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.Fourth-question {
+  font-size: 12px;
+  margin-top: 10px;
+  font-weight: 650;
+  color: hsl(292, 42%, 14%);
+}
+:hover.Fourth-question {
+  color: #ad28eb;
+  cursor: pointer;
+}
+.Fourth-answer-div {
+  width: 90%;
+  height: 75px;
+  /* background-color: burlywood; */
+  margin-top: 12px;
+  border-bottom: 1px solid silver;
+}
+.Fourth-answer {
+  font-size: 10px;
+  line-height: 15px;
+  color: hsl(292, 16%, 49%);
+}
+.First-hidden {
+  display: none;
+}
+.Second-hidden {
+  display: none;
+}
+.Third-hidden {
+  display: none;
+}
+.Fourth-hidden {
+  display: none;
+}
+
+.first-minus {
+  display: none;
+}
+.second-minus {
+  display: none;
+}
+.third-minus {
+  display: none;
+}
+.fourth-minus {
+  display: none;
+}
+/* .first-plus {
+  display: block;
+}
+.second-plus {
+  display: block;
+}
+.third-plus {
+  display: block;
+}
+.fourth-plus {
+  display: block;
+} */
