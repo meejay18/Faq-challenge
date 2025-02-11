@@ -39,6 +39,7 @@
 .Inside-Faq {
   width: 370px;
   min-height: 350px;
+  padding: 10px;
   /* background-color: brown; */
 }
 .Icon-holder {
@@ -214,15 +215,3 @@
 .fourth-minus {
   display: none;
 }
-/* .first-plus {
-  display: block;
-}
-.second-plus {
-  display: block;
-}
-.third-plus {
-  display: block;
-}
-.fourth-plus {
-  display: block;
-} */

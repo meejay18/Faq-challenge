@@ -1,5 +1,6 @@
 const firstSign = document.querySelector(".First-sign");
 const secondSign = document.querySelector(".Second-sign");
+const thirdSign = document.querySelector(".Third-sign");
 const fourthSign = document.querySelector(".Fourth-sign");
 const firstAnswer = document.querySelector(".First-answer-div");
 const secondAnswer = document.querySelector(".Second-answer-div");
@@ -13,41 +14,74 @@ const firstPlus = document.querySelector(".first-plus");
 const secondPlus = document.querySelector(".second-plus");
 const thirdPlus = document.querySelector(".third-plus");
 const fourthPlus = document.querySelector(".fourth-plus");
-console.log(fourthPlus);
 
-// const firstHidden = document.querySelector(".First-hidden");
-// console.log(firstHidden);
+const firstToggle = function () {
+  firstPlus.classList.toggle("first-minus");
+  firstMinus.classList.toggle("first-minus");
+
+  if (firstMinus.classList.contains("first-minus")) {
+    firstAnswer.style.display = "none";
+  } else {
+    firstAnswer.style.display = "block";
+  }
+};
+const secondToggle = function () {
+  secondPlus.classList.toggle("second-minus");
+  secondMinus.classList.toggle("second-minus");
+
+  if (secondMinus.classList.contains("second-minus")) {
+    secondAnswer.style.display = "none";
+  } else {
+    secondAnswer.style.display = "block";
+  }
+};
+const thirdToggle = function () {
+  thirdPlus.classList.toggle("third-minus");
+  thirdMinus.classList.toggle("third-minus");
+
+  if (thirdMinus.classList.contains("third-minus")) {
+    thirdAnswer.style.display = "none";
+  } else {
+    thirdAnswer.style.display = "block";
+  }
+};
+const fourthToggle = function () {
+  fourthPlus.classList.toggle("fourth-minus");
+  fourthMinus.classList.toggle("fourth-minus");
+
+  if (fourthMinus.classList.contains("fourth-minus")) {
+    fourthAnswer.style.display = "none";
+  } else {
+    fourthAnswer.style.display = "block";
+  }
+};
 
 const revealFirstAns = function () {
-  console.log("revealed");
   firstAnswer.classList.remove("First-hidden");
 };
 const revealSecondAns = function () {
-  console.log(" 2nd revealed");
   secondAnswer.classList.remove("Second-hidden");
 };
 const revealThirdAns = function () {
-  console.log("3rd revealed");
   thirdAnswer.classList.remove("Third-hidden");
 };
 const revealFourthAns = function () {
-  console.log("4th revealed");
   fourthAnswer.classList.remove("Fourth-hidden");
 };
 
 firstSign.addEventListener("click", function () {
   revealFirstAns();
-  firstMinus.classList.add("first-minus");
+  firstToggle();
 });
 secondSign.addEventListener("click", function () {
   revealSecondAns();
-  secondMinus.classList.remove("second-svg");
+  secondToggle();
 });
 thirdSign.addEventListener("click", function () {
   revealThirdAns();
-  thirdMinus.classList.remove("third-svg");
+  thirdToggle();
 });
 fourthSign.addEventListener("click", function () {
   revealFourthAns();
-  fourthMinus.classList.remove("fourth-svg");
+  fourthToggle();
 });
